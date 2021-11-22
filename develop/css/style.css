@@ -1,0 +1,73 @@
+.form-control {
+    height: 50px;
+    display: flex;
+    text-align: center;
+}
+
+#goBtn {
+    background-color: gold;
+    width: 60px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#webBtn {
+   background-color: rgb(211, 207, 207);
+   height: 50px;
+} 
+
+.searchBtnContainer {
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background: #E3E3E3;
+    display: inline-table;
+    position: relative;
+    overflow: hidden;
+}
+
+.searchBtnContainer li {
+    line-height: 20px;
+    padding: 5px 12px;
+    float: left;
+    display: block;
+}
+
+.searchBtnContainer li.active {
+    background: #fff;
+    border-radius: 50px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background: #f4f4f4;
+    color: #333333; 
+    width:100%; 
+    height: 50px;
+    padding: 10px;
+    display: inline;
+}
+
+.copyRightContainer{
+    float: left;
+} 
+
+.socialContainer{
+   float: right;  
+}
+
+.socialIcons{
+    margin-right: 30px;
+}
+
+.copyRightLinks {
+ color: black;
+}
+
+.copyRightLinks:hover {
+    color: blue;
+
+}
