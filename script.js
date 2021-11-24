@@ -26,4 +26,3 @@ $("#form").submit(function (event) {
         });
     })
 })
-

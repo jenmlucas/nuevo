@@ -29,15 +29,18 @@
 
 .searchBtnContainer li {
     line-height: 20px;
-    padding: 5px 12px;
+    padding: 5px 12px 0px;
     float: left;
     display: block;
+   
 }
 
 .searchBtnContainer li.active {
     background: #fff;
     border-radius: 50px;
 }
+
+
 
 .footer {
     position: fixed;
