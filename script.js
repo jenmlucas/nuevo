@@ -1,3 +1,25 @@
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  myFunction();
+
 $("#form").submit(function (event) {
     event.preventDefault()
 
@@ -7,7 +29,7 @@ $("#form").submit(function (event) {
 
     var API_KEY = 'da4d9baeee9eb6d86441f26dd38d4616'
 
-    var url ='http://api.serpstack.com/search?access_key=' + API_KEY + '&type=web&query=' + query
+    var url ='http://api.serpstack.com/search?access_key=' + API_KEY + '&type=web&engine=google&query=' + query
     console.log(url)
 
 
@@ -26,3 +48,4 @@ $("#form").submit(function (event) {
         });
     })
 })
+

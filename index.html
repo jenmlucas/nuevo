@@ -20,8 +20,14 @@
         <form id="form" autocomplete="off">
             <div style="width:50%" class="input-group mb-4 d:block mx-auto">
                 <input id="search" class="form-control" placeholder="Search" />
-                <button id="webBtn" class="btn btn-outline-secondary" type="button"><img
-                        src="develop/images/webIcon.png"></button>
+                <div class="dropdown">
+                    <button id="webBtn" class="btn btn-outline-secondary"><img onclick="myFunction()" class="dropbtn" src="develop/images/webIcon.png"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <a href="#"><img src="develop/images/imagesIcon.png"></a>
+                    <a href="#"><img src="develop/images/videosIcon.png"></a>
+                    <a href="#"><img src="develop/images/webIcon.png"></a>
+                    </div>
+                </div>
                 <button id="goBtn" class="btn btn-outline-secondary"> Go </button>
             </div>
         </form>
@@ -40,7 +46,7 @@
                 </li>
             </ul>
         </div>
-
+      
         <div class="card text-center">
             <div id="result"></div>
         </div>
@@ -67,7 +73,7 @@
                 <img src="develop/images/instagramIcon.png" />
             </a>
         </div>
-    </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
