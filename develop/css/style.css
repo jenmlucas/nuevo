@@ -114,3 +114,68 @@
     display: block;
 }
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 40px; 
+  } 
+  
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+    border:1px solid rgb(180, 177, 177);
+  }
+  
+  .switchColor{
+    background-color: rgb(180, 177, 177);
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 36px;
+    width: 160px;
+    left: 18px;
+    bottom: -1px;
+    top: 1px;
+    opacity: 5;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background-color: white;
+    border-radius: 50px;
+  }
+   
+  input:checked + .slider:before {
+    -webkit-transform: translateX(120px);
+    -ms-transform: translateX(120px);
+    transform: translateX(120px);
+    background-color: white;
+    opacity: 5;
+  }
+  
+  .text:after {
+    position: absolute;
+    top: 7px;
+    right: 25px;
+    content: "Social Search";
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .text:before {
+    position: absolute;
+    top: 7px;
+    left: 25px;
+    content: "Internet Search";
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
